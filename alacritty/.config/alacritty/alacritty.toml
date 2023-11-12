@@ -1,0 +1,21 @@
+[font]
+size = 12
+
+[font.bold]
+family = "Iosevka Term"
+style = "Medium"
+
+[font.bold_italic]
+family = "Iosevka Term"
+style = "Medium Oblique"
+
+[font.italic]
+family = "Iosevka Term"
+style = "Regular Oblique"
+
+[font.normal]
+family = "Iosevka Term"
+style = "Regular"
+
+[window]
+opacity = 0.8
