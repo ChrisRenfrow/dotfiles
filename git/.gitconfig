@@ -1,0 +1,11 @@
+[user]
+	email = dev@chrisrenfrow.me
+	name = Chris Renfrow
+[init]
+	defaultBranch = main
+[alias]
+	ignore = "!f() { args=$@; fish --command \"__gitignore $args\"; }; f"
+[pull]
+	rebase = true
+[core]
+	editor = nvim
