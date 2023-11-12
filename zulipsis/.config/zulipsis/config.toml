@@ -1,0 +1,70 @@
+# -*- mode: conf-toml -*-
+
+# url and email already defined in zuliprc
+[general]
+cycle_duration_seconds = 300 # 5 minutes
+
+[phrases]
+# The initial status to set before cycling over the "working" list
+# sets away to false
+start = [
+	"Initializing...",
+	["Loading...", "spinner"],
+	"Network connection established...",
+	["Brewing coffee...", "coffee-pour-over"],
+	["Pouring coffee...", "coffee"],
+	"Reticulating splines...",
+	"ljiiiiiiiiiiiiiiiiiiwerrrrrr Removing cat from keyboard...",
+	"Link START!",
+	"Chippin' in...",
+  ["Status 200: OK", "check"],
+]
+# The list of phrases cycled through when online.
+# Cycles periodically.
+# Sets away to false.
+working = [
+	"Processing...",
+	"Sipping coffee...",
+	"Thinking hard...",
+	"Thinking harder...",
+	"Thinking really hard...",
+  ["Contemplating the orb...", "wizard_hat"],
+	"Listening to the compiler...",
+	"Reading the error...",
+	"Re-reading the error...",
+	"Reading the manual...",
+	"Re-reading the manual...",
+  ["Rewriting it in Rust!", "ferris-bongo"],
+	"Touching computers...",
+	["Hacking the planet!", "earth-heart"],
+	"Learning generously...",
+	"Learning the hard way...",
+	"Applying head to desk...",
+	["Applying palm to face...", "face_palm"],
+	"Trying not to break things...",
+	["Beep boop...", "robot"],
+	["Meow~...", "cat-coffee"],
+	"E̷r̵r̵o̸r̸:̶ ̵C̶o̸r̶r̸u̴p̷t̸e̴d̶.̸.̷.̴",
+  ["Burning it to the ground...", "elmo_fire"],
+	["<3 ...", "cat-heart"],
+  ["pebkac af", "keyboard"]
+]
+# The list of phrases to select from as a parting status.
+# Does not cycle.
+# Sets status as away.
+pause = [
+	"Suspending...",
+	["Hibernating...", "snowflake"],
+	["Touching grass...", "nature-forest-mushrooms"],
+	"Taking a break...",
+	"Replacing cursor blink fluid...",
+  ["Error 410: Gone!", "invisible"],
+  ["Error 420: Enhancing calm...", "relieved"],
+	"Error 503: Unavailable...",
+]
+
+# The emojis to use for each state, probably just needs the name
+[emoji]
+start = "start"
+working = "time-hourglass"
+pause = "zzz"
